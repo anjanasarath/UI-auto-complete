@@ -18,8 +18,8 @@ export default class App extends React.Component {
       <div id="mainContainer" className="mainContainerDiv">
         <MuiThemeProvider>
           <div id="subContainer">
-          <HeaderComponent/>
-          <FindParking/>
+            <HeaderComponent/>
+            <FindParking/>
           </div>
         </MuiThemeProvider>
       </div>
