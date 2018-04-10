@@ -3,10 +3,8 @@ import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-//import AutoCompleteComponent from './auto_complete';
 import FindParking from './findParking';
 import HeaderComponent from './header';
-
 
 export default class App extends React.Component {
   constructor(props){
@@ -16,11 +14,10 @@ export default class App extends React.Component {
   }
 }
   render() {
-    //const { children } = this.props;
     return(
       <div id="mainContainer" className="mainContainerDiv">
         <MuiThemeProvider>
-          <div id="subContainer" className="subContainerDiv">
+          <div id="subContainer">
           <HeaderComponent/>
           <FindParking/>
           </div>

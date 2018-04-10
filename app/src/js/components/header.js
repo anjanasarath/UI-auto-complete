@@ -17,7 +17,7 @@ const style = {
 }
   const appBarStyle = {
   backgroundColor:'#FFFFF',
-  zIndex:2000,
+
 }
 
   const buttonStyle = {
