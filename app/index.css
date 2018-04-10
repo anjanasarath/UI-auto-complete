@@ -1,0 +1,107 @@
+body {
+  background-image: url(https://www.justpark.com/images/home_hero@3x.webp);
+  margin:  0;
+font-family: -apple
+-system,BlinkMacsystemFo
+nt,Segoe UI,Roboto,Oxygen
+-Sans,Ubuntu,Cantarell,
+ Helvetticca Neue,
+  sans-serif;
+}
+.mui--divider-right {
+border-right: 1px solid rgba(0, 0, 0, .6);
+}
+
+.inputMainUi1{
+  max-width: 20%;
+  max-height: 60%;
+  align-content: center;
+}
+.Sample  {
+  input, button {
+    font: inherit;
+  }
+}
+
+.Sample header {
+   background-color: rgb(50, 54, 57);
+   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+   padding: 20px;
+   color: white;
+
+   h1 {
+     font-size: inherit;
+     margin: 0;
+   }
+ }
+
+ .Sample__container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   margin: 10px 0;
+   padding: 10px;
+
+ }
+   .Sample__container__content {
+     display: flex;
+     max-width: 100%;
+     flex-basis: 420px;
+     flex-direction: column;
+     flex-grow: 100;
+     align-items: stretch;
+   }
+
+.mainContainerDiv {
+  max-width: 100%;
+  min-height: 90%;
+  justify-content: center;
+  margin-top: inherit;
+}
+.subContainerDiv{
+  max-width: 100%;
+  min-height: 90%;
+  margin: auto;
+}
+
+.containerDiv{
+  padding-top: 20%;
+  padding-bottom: 4%;
+  background-color: #21303e;
+}
+.text1Div {
+  margin-top: 30px;
+justify-content: center;
+
+}
+
+.h1 {
+
+  font-family: Nunito,sans-serif;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  }
+
+.secondsFont {
+  color:#0a0;
+}
+.Rbtn {
+    max-width: 38%;
+    max-height: 60%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
