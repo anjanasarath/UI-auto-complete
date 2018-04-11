@@ -5,7 +5,7 @@ html, body {
 body {
   background-image: url(https://www.justpark.com/images/home_hero@3x.webp) ;
   background-repeat:no-repeat;
-  
+
   background-size: cover;
   font-family: -apple
   -system,BlinkMacsystemFo
@@ -15,6 +15,11 @@ body {
   sans-serif;
 }
 
+.SocialLogin {
+    width: 40%;
+    height: 60%;
+    float: none;
+}
 .mui--divider-right {
 border-right: 1px solid rgba(0, 0, 0, .6);
 }

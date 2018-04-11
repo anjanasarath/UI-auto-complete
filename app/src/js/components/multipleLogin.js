@@ -1,18 +1,10 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
-import FlatButton from 'material-ui/FlatButton';
+import SocialLogin from 'react-social-login';
 
-export default class MultipleLoginComponent extends React.Component {
-  render() {
-    return (
-      <div>
-        <div>
-          hi
-        </div>
-      </div>
-    );
-  }
-}
+const Button = ({ children, triggerLogin, ...props }) => (
+  <button onClick={triggerLogin} {...props}>
+    { children }
+  </button>
+)
+
+export default SocialLogin(Button)
