@@ -9,13 +9,15 @@ const style1 = {
   buttonStyle : {
     backgroundColor:"#0a0",
     width:'100%',
-    height:'100%',
     paddingTop:'10%',
     paddingBottom:'10%',
     paddingRight:'10%',
     paddingLeft:'10%',
-    borderRadius:'2em',
+    borderRadius:'.4em',
     }
+  }
+  const rbtn1 = {
+    borderRadius:'.4em',
   }
   const auto1Style = {
     width: '100%',
@@ -23,22 +25,27 @@ const style1 = {
     background: '#FFFFF',
     paddingTop: '5%',
     paddingBottom:'5%',
-    borderRadius:'2em',
+    borderRadius:'.4em',
   }
   const auto2Style = {
-
+    width: '100%',
+    height: '100%',
+    paddingBottom: '10%',
+    paddingTop: '10%',
+    marginLeft: '15%',
+    paddingRight: '23%',
+    borderRadius: '.4em',
   }
   const auto3Style = {
-    auto:{
     width: '100%',
     height: '100%',
     paddingBottom: '10%',
     paddingTop: '10%',
     marginLeft: '19%',
     paddingRight: '23%',
-    borderRadius: '.5em',
+    borderRadius: '.4em',
   }
-}
+
 const FindParking = () => (
         <div>
           <div id="parking" className="containerDiv">
@@ -51,15 +58,15 @@ const FindParking = () => (
              </div>
             <div id="autocmplte2" className="row auto2">
               <AutoCompleteComponent style={auto2Style}/>
-              <AutoCompleteComponent style={auto3Style.auto}/>
+              <AutoCompleteComponent style={auto3Style}/>
             </div>
-            <div id="rbtn" className="Rbtn auto2">
-              <RaisedButton buttonStyle={style1.buttonStyle}>
+            <div id="rbtn" className="Rbtn">
+              <RaisedButton style={rbtn1} className="w100" buttonStyle={style1.buttonStyle}>
                 search
               </RaisedButton>
             </div>
           </div>
-          </div>
+         </div>
         </div>
       );
       export default FindParking;
