@@ -6,7 +6,7 @@ import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import TextField from 'material-ui/TextField';
 import SocialLoginButton from './multipleLogin';
-import Styles from './styles/styles_appBar';
+import Styles from './styles/styles_login';
 
 const handleSocialLogin = (user) => {
   console.log(user)

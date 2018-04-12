@@ -1,20 +1,26 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import LoginPage from './loginPage';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
+import FindParking from './findParking';
+import HeaderComponent from './header';
 
 export default class App extends React.Component {
   constructor(props){
   super(props);
-  this.state = {};
-  //this.handleSocialLogin = this.handleSocialLogin.bind(this);
-  //this.handleSocialLoginFailure =  this.handleSocialLoginFailure.bind(this);
+  this.state = {
+
+  }
 }
   render() {
     return(
-      <div id="loginPageDiv" className="LoginPage" >
+      <div id="mainContainer" className="mainContainerDiv">
         <MuiThemeProvider>
-          <LoginPage/>
+          <div id="subContainer">
+            <HeaderComponent/>
+            <FindParking/>
+          </div>
         </MuiThemeProvider>
       </div>
     );
