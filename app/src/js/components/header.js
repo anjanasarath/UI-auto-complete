@@ -6,7 +6,6 @@ import Divider from 'muicss/lib/react/divider';
 import Logo from '../../logo/header_logo.svg';
 import Styles from './styles/styles_header';
 
-
 const rightButtons = (
     <div id="headerButtons">
         <FlatButton label="Help" labelStyle={Styles.style.labelStyle} style={Styles.buttonStyle} />
