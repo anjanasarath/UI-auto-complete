@@ -1,6 +1,5 @@
 html, body {
-  height: auto;
-  margin: 0;
+  margin: 0 auto;
 }
 body {
   background-image: url(https://www.justpark.com/images/home_hero@3x.webp) ;
@@ -15,11 +14,37 @@ body {
   sans-serif;
 }
 
-.SocialLogin {
-    width: 40%;
-    height: 60%;
-    float: none;
+.glyphicons.icon-facebook:before {
+    content: "\e411";
 }
+
+.fbbtn {
+
+}
+.twtrbtn {
+
+}
+.gglbtn {
+
+}
+
+.LoginPage {
+  width: 500px;
+  margin: 0 auto;
+    background-color: blanchedalmond;
+
+}
+
+.socialLoginOuter{
+
+}
+.socialLoginInner {
+
+ min-width: 500px;
+ min-height: 600px;
+ width: 100%;
+}
+
 .mui--divider-right {
 border-right: 1px solid rgba(0, 0, 0, .6);
 }
@@ -32,11 +57,9 @@ border-right: 1px solid rgba(0, 0, 0, .6);
     height:18em;
     margin-top: -18em; /*set to a negative number 1/2 of your height*/
     margin-left: -15em
-
 }
 
-
-.inputMainUi1{
+.inputMainUi1 {
 
   align-content: center;
 }
@@ -53,15 +76,6 @@ border-right: 1px solid rgba(0, 0, 0, .6);
   padding-bottom: 12%;
   background-color: #21303e;
 }
-  .inputdiv1 {
-
-  }
-  .inputdiv2 {
-
-  }
-  .inputdiv3 {
-
-  }
 
 .h1 {
   font-family: Nunito,sans-serif;
@@ -94,6 +108,7 @@ border-right: 1px solid rgba(0, 0, 0, .6);
 .auto2{
   padding-top: 2%;
 }
+
 .secondsFont {
   color:#0a0;
 }
@@ -107,20 +122,4 @@ border-right: 1px solid rgba(0, 0, 0, .6);
   align-content: center;
   justify-content: center;
   border-radius: .4em;
-}
-
-.center {
-  align-items: center;
-  justify-content: center;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
 }

@@ -7,7 +7,7 @@ const AutoCompleteComponent = (props) => (
            <Autocomplete
               style={props.style}
               onPlaceSelected={(place) => {
-                console.log(place);
+              console.log(place);
               }}
               types={['(regions)']}
               componentRestrictions={{country: "ru"}}
