@@ -4,47 +4,7 @@ import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
 //import DateComponent from './date_time_picker';
 import AutoCompleteComponent from './auto_complete';
-
-const style1 = {
-  buttonStyle : {
-    backgroundColor:"#0a0",
-    width:'100%',
-    paddingTop:'10%',
-    paddingBottom:'10%',
-    paddingRight:'10%',
-    paddingLeft:'10%',
-    borderRadius:'.4em',
-    }
-  }
-  const rbtn1 = {
-    borderRadius:'.4em',
-  }
-  const auto1Style = {
-    width: '100%',
-    height: '100%',
-    background: '#FFFFF',
-    paddingTop: '5%',
-    paddingBottom:'5%',
-    borderRadius:'.4em',
-  }
-  const auto2Style = {
-    width: '100%',
-    height: '100%',
-    paddingBottom: '10%',
-    paddingTop: '10%',
-    marginLeft: '15%',
-    paddingRight: '23%',
-    borderRadius: '.4em',
-  }
-  const auto3Style = {
-    width: '100%',
-    height: '100%',
-    paddingBottom: '10%',
-    paddingTop: '10%',
-    marginLeft: '19%',
-    paddingRight: '23%',
-    borderRadius: '.4em',
-  }
+import Styles from './styles/styles_findParking';
 
 const FindParking = () => (
         <div>
@@ -54,14 +14,14 @@ const FindParking = () => (
               <h4 className="h4">Choose from millions of available spaces, or reserve your space
                 in advance. Join over 1.5 million drivers enjoying easy parking.</h4>
               <div id="autocmplte2" className="center auto1">
-                <AutoCompleteComponent style={auto1Style}/>
+                <AutoCompleteComponent style={Styles.auto1Style}/>
               </div>
               <div id="autocmplte2" className="row auto2">
-                <AutoCompleteComponent style={auto2Style}/>
-                <AutoCompleteComponent style={auto3Style}/>
+                <AutoCompleteComponent style={Styles.auto2Style}/>
+                <AutoCompleteComponent style={Styles.auto3Style}/>
               </div>
               <div id="rbtn" className="Rbtn">
-                <RaisedButton style={rbtn1} className="w100" buttonStyle={style1.buttonStyle}>
+                <RaisedButton style={Styles.rbtn1} className="w100" buttonStyle={Styles.style1.buttonStyle}>
                   Search
                 </RaisedButton>
               </div>
