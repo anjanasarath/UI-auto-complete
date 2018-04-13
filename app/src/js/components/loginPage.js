@@ -28,7 +28,11 @@ export default class LoginPage extends React.Component {
       <div id="socialLoginOuterDiv" className="socialLoginOuter">
         <MuiThemeProvider>
           <Paper zDepth={3} style={Styles.paperStyle}>
+
           <div id="SocialLoginInnerDiv" className="socialLoginInner">
+            <div id="modalHeader" className="modalHeaderCss">
+              <p>Please log in to your account</p>
+            </div>
             <div id="fbbtnDiv" className="">
             <SocialLoginButton
             style={Styles.fbButtonStyle}
@@ -62,17 +66,22 @@ export default class LoginPage extends React.Component {
               Login with Google
             </SocialLoginButton>
             </div>
-            <div>
+            <div id="divider" className="">
             <Divider style={Styles.ddrStyle} inset={true}/>
-            </div>
             <p>or</p>
-            <div>
               <Divider style={Styles.ddrStyle} inset={true}/>
             </div>
+            <div id="email" className="row" >
             <Subheader>Email Address or phone number</Subheader>
             <TextField></TextField>
+            </div>
+            <div id = "pswd" className="row">
             <Subheader>Password</Subheader>
             <TextField></TextField>
+            </div>
+            <div id="modalFooter" className="modalFooterCss">
+              <button style={Styles.footerbtn}>Log in</button>
+            </div>
           </div>
           </Paper>
         </MuiThemeProvider>

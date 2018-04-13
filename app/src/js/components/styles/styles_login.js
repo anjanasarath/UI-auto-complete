@@ -36,10 +36,23 @@ const Styles = {
     marginTop: '8em',
     marginBottom: '3em',
     textAlign: 'center',
-    width: '500px',
-  },
+    width: '640px',
+    height: '600px',
+
+    },
+    footerbtn: {
+      float:'right',
+      marginRight:'3em',
+      width: '6em',
+      height: '3em',
+      borderRadius:'1em',
+      backgroundColor: '#3473e7',
+      color:'#fff',
+
+    },
+
    ddrStyle : {
-    marginRight: '4em',
+
   },
 };
 export default Styles;

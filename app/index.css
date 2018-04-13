@@ -13,6 +13,16 @@ body {
   Helvetticca Neue,
   sans-serif;
 }
+.modalFooterCss {
+  background: webkit-gradient(linear, center top, center bottom, from(#f6f6f6), to(#e5e5e5));
+    border: 1px solid #ccc;
+    }
+
+.modalHeaderCss {
+  background: webkit-gradient(linear, center top, center bottom, from(#f6f6f6), to(#e5e5e5));
+    border: 1px solid #ccc;
+    padding: 9px 15px;
+}
 
 .glyphicons.icon-facebook:before {
     content: "\e411";
@@ -122,4 +132,7 @@ border-right: 1px solid rgba(0, 0, 0, .6);
   align-content: center;
   justify-content: center;
   border-radius: .4em;
+}
+.row {
+  display: flex;
 }
