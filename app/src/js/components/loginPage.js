@@ -8,7 +8,7 @@ import TextField from 'material-ui/TextField';
 import SocialLoginButton from './multipleLogin';
 import Styles from './styles/styles_login';
 import Logo from '../../logo/or-divider.png';
-//import LogoLock from '../../logo/glyphicons-halflings.png';
+
 
 const handleSocialLogin = (user) => {
   console.log(user)
@@ -34,7 +34,7 @@ export default class LoginPage extends React.Component {
           <div id="SocialLoginInnerDiv" className="socialLoginInner">
             <div id="modalHeader" className="modalHeaderCss">
               <Subheader>Please log in to your account</Subheader>
-              
+              <i id="icon" className="icon-lock"></i>
             </div>
             <div id="fbbtnDiv" className="">
             <SocialLoginButton
@@ -76,11 +76,11 @@ export default class LoginPage extends React.Component {
             </div>
             <div id="email" className="row" >
             <Subheader>Email Address or phone number</Subheader>
-            <TextField></TextField>
+            <TextField id="t1"></TextField>
             </div>
             <div id = "pswd" className="row">
             <Subheader>Password</Subheader>
-            <TextField></TextField>
+            <TextField id="t2"></TextField>
             </div>
             <Subheader>Forgotten your password?</Subheader>
             <Subheader>Don't have an account?Sign up now</Subheader>
