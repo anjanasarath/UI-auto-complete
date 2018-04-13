@@ -7,8 +7,6 @@ import Subheader from 'material-ui/Subheader';
 import TextField from 'material-ui/TextField';
 import SocialLoginButton from './multipleLogin';
 import Styles from './styles/styles_login';
-import Logo from '../../logo/or-divider.png';
-//import LogoLock from '../../logo/glyphicons-halflings.png';
 
 const handleSocialLogin = (user) => {
   console.log(user)
@@ -33,8 +31,7 @@ export default class LoginPage extends React.Component {
 
           <div id="SocialLoginInnerDiv" className="socialLoginInner">
             <div id="modalHeader" className="modalHeaderCss">
-              <Subheader>Please log in to your account</Subheader>
-              
+              <p>Register for an account</p>
             </div>
             <div id="fbbtnDiv" className="">
             <SocialLoginButton
@@ -69,10 +66,11 @@ export default class LoginPage extends React.Component {
               Login with Google
             </SocialLoginButton>
             </div>
+            <p>Takes only a few seconds</p>
             <div id="divider" className="">
-
-            <span><img src={Logo}/></span>
-
+            <Divider style={Styles.ddrStyle} inset={true}/>
+            <p>or</p>
+              <Divider style={Styles.ddrStyle} inset={true}/>
             </div>
             <div id="email" className="row" >
             <Subheader>Email Address or phone number</Subheader>
@@ -82,8 +80,6 @@ export default class LoginPage extends React.Component {
             <Subheader>Password</Subheader>
             <TextField></TextField>
             </div>
-            <Subheader>Forgotten your password?</Subheader>
-            <Subheader>Don't have an account?Sign up now</Subheader>
             <div id="modalFooter" className="modalFooterCss">
               <button style={Styles.footerbtn}>Log in</button>
             </div>
