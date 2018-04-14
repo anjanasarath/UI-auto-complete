@@ -22,6 +22,7 @@
     "react-datetime-picker": "1.0.1",
     "react-dom": "^15.6.2",
     "react-google-autocomplete": "^1.0.15",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.1.1",
     "react-social-login": "^3.4.2",
     "webpack-dev-server": "^2.11.1"

@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import LoginPage from './loginPage';
+//import LoginPage from './loginPage';
+//import BookingFormComponent from './bookingForm';
+import RecentBookingComponent from './recentBooking';
 
 export default class App extends React.Component {
   constructor(props){
@@ -14,7 +16,7 @@ export default class App extends React.Component {
     return(
       <div id="loginPageDiv" className="LoginPage" >
         <MuiThemeProvider>
-          <LoginPage/>
+          <RecentBookingComponent/>
         </MuiThemeProvider>
       </div>
     );

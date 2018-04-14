@@ -1,4 +1,7 @@
 const Styles = {
+  spacebtnWidth: {
+   width: 200,
+ },
  style1:  {
   buttonStyle : {
     backgroundColor:"#0a0",

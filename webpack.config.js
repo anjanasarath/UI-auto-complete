@@ -31,7 +31,7 @@ module.exports = {
         }
       },
       {test: /\.css$/, use: ['style-loader','css-loader']},
-      {test: /\.(png|jpg|gif|svg)$/,use:[{loader: 'url-loader',options: {limit: 25000}}]}
+      {test: /\.(png|jpg|gif|svg|jpeg)$/,use:[{loader: 'url-loader',options: {limit: 25000}}]}
     ]
   },
   devServer: {
