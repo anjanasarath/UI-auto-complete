@@ -13,6 +13,7 @@
     "babel": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "config": "^1.30.0",
+    "jquery": "^3.3.1",
     "material-ui": "^0.20.0",
     "moment": "^2.20.0",
     "mui": "0.0.1",
@@ -24,7 +25,10 @@
     "react-google-autocomplete": "^1.0.15",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.1.1",
+    "react-slick": "^0.23.1",
     "react-social-login": "^3.4.2",
+    "redux": "^3.7.2",
+    "slick-carousel": "^1.8.1",
     "webpack-dev-server": "^2.11.1"
   },
   "babel": {

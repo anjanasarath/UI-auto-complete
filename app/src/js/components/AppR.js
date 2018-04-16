@@ -3,7 +3,8 @@ import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import FooterComponent from './footer';
+import LoginPage from './loginPage';
+import FindParking from './findParking';
 import HeaderComponent from './header';
 
 export default class App extends React.Component {
@@ -19,7 +20,7 @@ export default class App extends React.Component {
         <MuiThemeProvider>
           <div id="subContainer">
             <HeaderComponent/>
-            <FooterComponent/>
+            <LoginPage/>
           </div>
         </MuiThemeProvider>
       </div>
