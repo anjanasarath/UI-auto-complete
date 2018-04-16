@@ -2,9 +2,14 @@ import React from 'react';
 import { GridList, GridTile } from 'material-ui/GridList';
 import IconButton from 'material-ui/IconButton';
 import StarBorder from 'material-ui/svg-icons/toggle/star-border';
-import Image1 from '../../images/Grid_list/a_park.jpeg';
-import Image2 from '../../images/Grid_list/b_park.jpeg';
-
+import Image1 from '../images/grid-list/a_park.jpg';
+import Image2 from '../images/grid-list/b_park.jpg';
+import Image3 from '../images/grid-list/c_park.jpg';
+import Image4 from '../images/grid-list/d_park.jpg';
+import Image5 from '../images/grid-list/i_park.jpg';
+import Image6 from '../images/grid-list/f_park.jpg';
+import Image7 from '../images/grid-list/g_park.jpg';
+import Image8 from '../images/grid-list/h_park.jpg';
 
 const styles = {
   root: {
@@ -24,42 +29,42 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'Image1',
+    img: 'image1',
     place: 'aaaa',
     id: 'AAAA',
   },
   {
-    img: '/images/Grid-list/b_park.jpeg',
+    img: 'image2',
     place: 'bbbb',
     id: 'BBBB',
   },
   {
-    img: '/images/Grid-list/c_park.jpeg',
+    img: 'image3',
     place: 'cccc',
     id: 'CCCC',
   },
   {
-    img: '/images/Grid-list/d_park.jpeg',
+    img: 'image4',
     place: 'dddd',
     id: 'DDDD',
   },
   {
-    img: '/images/Grid-list/e_park.jpeg',
+    img: 'image5',
     place: 'eeee',
     id: 'EEEE',
   },
   {
-    img: '/images/Grid-list/f_park.jpeg',
+    img: 'image6',
     place: 'ffff',
     id: 'FFFF',
   },
   {
-    img: '/images/Grid-list/g_park.jpeg',
+    img: 'image7',
     place: 'gggg',
     id: 'GGGG',
   },
   {
-    img: '/images/Grid-list/h_park.jpeg',
+    img: 'image8',
     place: 'hhhh',
     id: 'HHHHH',
   },
@@ -68,7 +73,7 @@ const tilesData = [
 /**
  * This example demonstrates the horizontal scrollable single-line grid list of images.
  */
-const GridListExampleSingleLine = () => (
+const RecentBookingComponent = () => (
   <div style={styles.root}>
     <GridList style={styles.gridList} cols={2.2}>
       {tilesData.map((tile) => (
@@ -80,10 +85,11 @@ const GridListExampleSingleLine = () => (
           titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
         >
           <img src={tile.img} />
+
         </GridTile>
       ))}
     </GridList>
   </div>
 );
 
-export default GridListExampleSingleLine;
+export default RecentBookingComponent;

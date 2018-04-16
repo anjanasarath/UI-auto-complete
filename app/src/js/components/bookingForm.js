@@ -6,19 +6,13 @@ import RaisedButton from 'material-ui/RaisedButton';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import AutoCompleteComponent from './auto_complete';
-import Styles from './styles/styles_findParking';
-
-const styles = {
-  customWidth: {
-    width: '25em',
-  },
-};
+import Styles from '../../styles/bookingForm';
 
 class BookingFormComponent extends React.Component {
   constructor(props) {
     super();
     this.state = {
-                value: 1,
+                value: 0,
               }
     this.handleChange = this.handleChange.bind(this);
   };
@@ -28,36 +22,40 @@ class BookingFormComponent extends React.Component {
   }
   render() {
     return(
-    <div>
-      <h1 className="h1">Find parking in <span className="secondsFont">seconds</span></h1>
-      <h4 className="h4">Choose from millions of available spaces, or reserve your space
-        in advance. Join over 1.5 million drivers enjoying easy parking.</h4>
-        <div id="autocmplte2" className="center auto1">
-          <AutoCompleteComponent style={Styles.auto1Style}/>
+    <div className="horizontal">
+      <div className="flex1 backgroundBlue"></div>
+      <div className="flex2 backgroundBlue">
+        <h1 className="bookingHeader">Find parking in <span className="green">seconds</span></h1>
+        <h4 className="maxW450 white">Choose from millions of available spaces, or reserve your space
+          in advance. Join over 1.5 million drivers enjoying easy parking.</h4>
+          <div>
+            <AutoCompleteComponent style={Styles.auto}/>
+          </div>
+          <div>
+            <DropDownMenu
+             title="Space"
+             labelStyle={Styles.dropDownLabel}
+             value={this.state.value}
+             onChange={this.handleChange}
+             style={Styles.dropDown}
+             autoWidth={false}
+           >
+           <MenuItem value={0} primaryText="Space"/>
+           <MenuItem value={1} primaryText="Parking"/>
+           <MenuItem value={2} primaryText="Warehouse"/>
+            </DropDownMenu>
+          </div>
+          <div className="horizontal marginTop4 maxW450">
+            <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
+              Search
+            </RaisedButton>
+            <span>&nbsp;</span>
+            <RaisedButton style={Styles.rbutton} className="flex1" buttonStyle={Styles.button}>
+              I Feel Lucky
+            </RaisedButton>
+          </div>
         </div>
-        <div id="dropMenu" className="center auto1">
-          <DropDownMenu
-            title="Space"
-           value={this.state.value}
-           onChange={this.handleChange}
-           style={styles.customWidth}
-           autoWidth={false}
-         >
-         <MenuItem value={1} primaryText="Space" />
-         <MenuItem value={2} primaryText="Parking" />
-         <MenuItem value={2} primaryText="Warehouse" />
-          </DropDownMenu>
-        </div>
-        <div id="rbtn" className="Rbtn">
-          <RaisedButton style={Styles.rbtn1} className="w100" buttonStyle={Styles.style1.buttonStyle}>
-            Search
-          </RaisedButton>
-        </div>
-        <div id="rbtn" className="Rbtn">
-          <RaisedButton style={Styles.rbtn1} className="w100" buttonStyle={Styles.style1.buttonStyle}>
-            I Feel Lucky
-          </RaisedButton>
-        </div>
+      <div className="flex1"></div>
     </div>
   );
 }

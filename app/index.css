@@ -1,17 +1,59 @@
 html, body {
-  margin: 0 auto;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
+
 body {
   background-image: url(https://www.justpark.com/images/home_hero@3x.webp) ;
   background-repeat:no-repeat;
-  background-size: cover;
-  font-family: -apple
-  -system,BlinkMacsystemFo
-  nt,Segoe UI,Roboto,Oxygen
-  -Sans,Ubuntu,Cantarell,
-  Helvetticca Neue,
-  sans-serif;
+  background-size: 100% 100%;
 }
+
+.main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.horizontal {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex2 {
+  flex: 2;
+}
+
+.bookingHeader {
+  color: #fff;
+  font-weight: 400;
+  font-family: Nunito, sans-serif;
+}
+
+.maxW450 {
+  max-width: 450px;
+}
+
+.green {
+  color: #0a0;
+}
+
+.marginTop4 {
+  margin-top: 4px;
+}
+
+.backgroundBlue {
+  background-color: #21303e;
+}
+
+.white {
+  color: #fff;
+}
+
 .icon-lock {
     background-position: -287px -24px;
     display: inline-block;
