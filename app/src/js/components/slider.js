@@ -29,42 +29,42 @@ const styles = {
 
 const tilesData = [
   {
-    img: 'image1',
+    img: Image1,
     place: 'aaaa',
     id: 'AAAA',
   },
   {
-    img: 'image2',
+    img: Image2,
     place: 'bbbb',
     id: 'BBBB',
   },
   {
-    img: 'image3',
+    img: Image3,
     place: 'cccc',
     id: 'CCCC',
   },
   {
-    img: 'image4',
+    img: Image4,
     place: 'dddd',
     id: 'DDDD',
   },
   {
-    img: 'image5',
+    img: Image5,
     place: 'eeee',
     id: 'EEEE',
   },
   {
-    img: 'image6',
+    img: Image6,
     place: 'ffff',
     id: 'FFFF',
   },
   {
-    img: 'image7',
+    img: Image7,
     place: 'gggg',
     id: 'GGGG',
   },
   {
-    img: 'image8',
+    img: Image8,
     place: 'hhhh',
     id: 'HHHHH',
   },
@@ -73,7 +73,7 @@ const tilesData = [
 /**
  * This example demonstrates the horizontal scrollable single-line grid list of images.
  */
-const RecentBookingComponent = () => (
+const SliderComponent = () => (
   <div style={styles.root}>
     <GridList style={styles.gridList} cols={2.2}>
       {tilesData.map((tile) => (
@@ -81,6 +81,7 @@ const RecentBookingComponent = () => (
           key={tile.img}
           title={tile.place}
           actionIcon={<IconButton><StarBorder color="rgb(0, 188, 212)" /></IconButton>}
+          actionPosition="right"
           titleStyle={styles.titleStyle}
           titleBackground="linear-gradient(to top, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
         >
@@ -92,4 +93,4 @@ const RecentBookingComponent = () => (
   </div>
 );
 
-export default RecentBookingComponent;
+export default SliderComponent;

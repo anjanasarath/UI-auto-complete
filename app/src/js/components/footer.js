@@ -12,6 +12,7 @@ const languages = [
   const currencies = [
   'Mexico Peso',
   'USD',
+  'Renminibi'
   ];
 
 export default class FooterComponent extends React.Component {
