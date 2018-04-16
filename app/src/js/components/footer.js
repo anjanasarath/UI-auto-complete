@@ -18,38 +18,39 @@ export default class FooterComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      values : [],
+      valuesLang : [],
+      valuesCurr : [],
     };
        this.handleChangeLang = this.handleChangeLang.bind(this);
        this.handleChangeCurr = this.handleChangeCurr.bind(this);
     }
 
-  handleChangeLang(event, index, values) {
-     this.setState({values});
+  handleChangeLang(event, index, valuesLang) {
+     this.setState({valuesLang});
    }
 
-  handleChangeCurr(event, index, values) {
-    this.setState({values});
+  handleChangeCurr(event, index, valuesCurr) {
+    this.setState({valuesCurr});
   }
 
-  menuItemsLang(values) {
+  menuItemsLang(valuesLang) {
     return languages.map((lang) => (
       <MenuItem
         key={lang}
         insetChildren={true}
-        checked={values && values.indexOf(lang) > -1}
+        checked={valuesLang && valuesLang.indexOf(lang) > -1}
         value={lang}
         primaryText={lang}
       />
     ));
   }
 
-  menuItemsCurr(values) {
+  menuItemsCurr(valuesCurr) {
     return currencies.map((curr) => (
       <MenuItem
         key={curr}
         insetChildren={true}
-        checked={values && values.indexOf(curr) > -1}
+        checked={valuesCurr && valuesCurr.indexOf(curr) > -1}
         value={curr}
         primaryText={curr}
       />
@@ -58,25 +59,25 @@ export default class FooterComponent extends React.Component {
 
 
   render() {
-             const {values} = this.state;
+             const {valuesLang, valuesCurr} = this.state;
     return(
           <div>
             <div>
               <SelectField
                 multiple={false}
                 hintText="Select Language"
-                value={values}
+                value={valuesLang}
                 onChange={this.handleChangeLang}
               >
-                {this.menuItemsLang(values)}
+                {this.menuItemsLang(valuesLang)}
               </SelectField>
               <SelectField
                 multiple={false}
                 hintText="Select Currency"
-                value={values}
+                value={valuesCurr}
                 onChange={this.handleChangeCurr}
               >
-                {this.menuItemsCurr(values)}
+                {this.menuItemsCurr(valuesCurr)}
               </SelectField>
             </div>
             <div>
