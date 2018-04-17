@@ -13,7 +13,7 @@ import Image8 from '../images/grid-list/h_park.jpg';
 //@import "~slick-carousel/slick/slick.css";
 //@import "~slick-carousel/slick/slick-theme.css";
 
-export default class MultipleItems extends React.Component {
+export default class RecentBookedCarouselComponent extends React.Component {
 
   render() {
 
@@ -34,7 +34,7 @@ export default class MultipleItems extends React.Component {
 
     return (
       <div style={stylwer}>
-        <h2> Multiple items </h2>
+        <h3> Recently Booked </h3>
         <Slider {...settings}>
           <div>
             <img src={Image1} />

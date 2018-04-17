@@ -4,7 +4,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header';
 //import LoginPage from './loginPage';
 import BookingFormComponent from './bookingForm';
-import MultipleItems from './slick_carousel';
+import FeaturedComponent from './featured_slick_carousel';
 
 export default class App extends React.Component {
   constructor(props){
@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <MuiThemeProvider>
           <div className="main">
             <Header/>
-            <MultipleItems/>
+            <FeaturedComponent/>
           </div>
         </MuiThemeProvider>
       );
