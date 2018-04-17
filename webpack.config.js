@@ -39,6 +39,9 @@ module.exports = {
     compress: true,
     port: 8090
   },
+  node: {
+  fs: 'empty'
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
