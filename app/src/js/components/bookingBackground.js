@@ -15,36 +15,34 @@ export default class BackgroundComponent extends React.Component {
   render() {
 
       const settings = {
+      className: "slider_row",
+      adaptiveHeight: true,
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-
-    const stylwer = {
-      width: '100%',
-      height: '100%',
-      marginLeft: '100px',
-    }
+      const stylex = {
+        marginLeft: '100px',
+      }
 
     return (
-      <div >
-
+      <div style={stylex}>
         <Slider {...settings}>
-          <div>
+          <div >
             <img src={Image1} />
           </div>
-            <div>
+          <div >
             <img src={Image2} />
           </div>
-          <div>
+          <div >
             <img src={Image3} />
           </div>
-          <div>
+          <div >
             <img src={Image4} />
           </div>
-          <div>
+          <div >
             <img src={Image5} />
           </div>
         </Slider>

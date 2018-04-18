@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header';
-//import LoginPage from './loginPage';
-import BookingFormComponent from './bookingForm';
 import FeaturedComponent from './featured_slick_carousel';
 import RecentBookedCarouselComponent from './recentlyBookedListCarousel';
 import BackgroundComponent from './bookingBackground';

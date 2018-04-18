@@ -7,7 +7,7 @@ html, body {
 body {
   background-image: url(https://www.justpark.com/images/home_hero@3x.webp) ;
   background-repeat:no-repeat;
-  
+
 }
 
 .main {
@@ -26,6 +26,15 @@ body {
 
 .flex2 {
   flex: 2;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slider_row {
+  max-width: 800px;
+  max-height: 500px;
 }
 
 .bookingHeader {
