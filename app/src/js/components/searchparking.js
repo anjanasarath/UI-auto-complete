@@ -6,9 +6,9 @@ import RaisedButton from 'material-ui/RaisedButton';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
 import AutoCompleteComponent from './auto_complete';
-import Styles from '../../styles/bookingForm';
+import Styles from '../../styles/searchparking';
 
-class BookingFormComponent extends React.Component {
+class SearchParking extends React.Component {
   constructor(props) {
     super();
     this.state = {
@@ -60,4 +60,4 @@ class BookingFormComponent extends React.Component {
   );
 }
 }
-export default BookingFormComponent;
+export default SearchParking;

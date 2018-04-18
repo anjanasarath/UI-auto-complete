@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { baseUrl } from "config";
+//import { baseUrl } from "config";
 import Image1 from '../images/grid-list/a_park.jpg';
 import Image2 from '../images/grid-list/b_park.jpg';
 import Image3 from '../images/grid-list/c_park.jpg';
@@ -17,8 +17,7 @@ export default class RecentBookedCarouselComponent extends React.Component {
 
   render() {
 
-    let baseUrl = '../images/grid-list'
-    const settings = {
+      const settings = {
       dots: true,
       infinite: true,
       speed: 500,
