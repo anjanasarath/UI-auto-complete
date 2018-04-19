@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from './header';
-import FeaturedComponent from './featured_slick_carousel';
+import FeaturedList from './featured_slick_carousel';
 import RecentBookedCarouselComponent from './recentlyBookedListCarousel';
 import BackgroundComponent from './bookingBackground';
 
@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <MuiThemeProvider>
           <div className="main">
             <Header/>
-            <BackgroundComponent/>
+            <FeaturedList/>
           </div>
         </MuiThemeProvider>
       );
