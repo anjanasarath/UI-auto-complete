@@ -44,16 +44,16 @@ export default class FeaturedList extends React.Component {
         <Slider {...settings}>
           <div>
             <Card expanded={true}>
-              <CardHeader
-                title="Hi"
-                subtitle="Welcome"
-              />
               <CardMedia
                 overlay={<CardTitle title="image1" subtitle="place1" />}
                 mediaStyle={mediaStyll}
                 >
                 <img src={Image1} alt="recent1" />
               </CardMedia>
+              <CardHeader
+                title="Hi"
+                subtitle="Welcome"
+              />
             </Card>
           </div>
           <div>

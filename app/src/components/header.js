@@ -3,7 +3,7 @@ import ReactDom from 'react-dom';
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 import Divider from 'muicss/lib/react/divider';
-import Logo from '../../logo/header_logo.svg';
+import Logo from '../logo/header_logo.svg';
 import Styles from './styles/styles_header';
 
 const rightButtons = (
