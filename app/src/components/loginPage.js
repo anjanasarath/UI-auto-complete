@@ -79,7 +79,7 @@ export default class LoginPage extends React.Component {
               <TextField name="text" style={Styles.textfieldWidth}></TextField>
             </div>
             <p>Forgotten your password?</p>
-            <p>Don't have an account?Sign up now</p>
+            <p>Don&#39;t have an account?Sign up now</p>
             <button style={Styles.footerbtn}>Log in</button>
           </Card>
         </div>
