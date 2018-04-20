@@ -41,6 +41,7 @@ class SearchParking extends React.Component {
               <div>
                 <DropDownMenu
                   title="Space"
+                  menuStyle={Styles.dropDown.color}
                   value={this.state.value}
                   onChange={this.handleChange}
                   style={Styles.dropDown.menu}

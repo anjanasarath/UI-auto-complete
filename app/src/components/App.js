@@ -6,6 +6,7 @@ import FeaturedList from './featured_slick_carousel';
 import RecentBookedCarouselComponent from './recentlyBookedListCarousel';
 import BackgroundComponent from './bookingBackground';
 import SearchParking from './searchparking';
+import LoginPage from './loginPage';
 
 export default class App extends React.Component {
   constructor(props){
@@ -19,8 +20,7 @@ export default class App extends React.Component {
         <MuiThemeProvider>
           <div className="main">
             <Header/>
-            <SearchParking/>
-          
+          <LoginPage/>
           </div>
         </MuiThemeProvider>
       );
