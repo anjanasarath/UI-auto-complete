@@ -67,10 +67,10 @@ export default class LoginPage extends React.Component {
                 Login with Google
               </SocialLoginButton>
             </div>
-              <div>
-                <span><img src={Logo}/></span>
-              </div>
-            <div >
+            <div>
+              <span><img src={Logo}/></span>
+            </div>
+            <div>
               <CardText style={{float:'left'}}>Email Address or phone number</CardText>
               <TextField name="text" style={Styles.textfieldWidth}></TextField>
             </div>
@@ -80,7 +80,7 @@ export default class LoginPage extends React.Component {
             </div>
             <p>Forgotten your password?</p>
             <p>Don't have an account?Sign up now</p>
-              <button style={Styles.footerbtn}>Log in</button>
+            <button style={Styles.footerbtn}>Log in</button>
           </Card>
         </div>
     </div>
